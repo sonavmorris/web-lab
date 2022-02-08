@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>online examination</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h3>ONLINE EXAMINATION</h3>
+<form >
+    <div>
+    <p>A)value of 2*2 ?</p>
+    <p><input type="radio" name="question1" value="4" id="four">A 4</p>
+    <p><input type="radio" name="question1" value="8" >B 8</p>
+    <p><input type="radio" name="question1" value="3" >C  3</p>
+    <p><input type="radio" name="question1" value="2" >D  2</p>
+    </div>
+    <div>
+    <p>B)national bird of india ?</p>
+    <p><input type="radio" name="question2" value="peacock" id="bird">A Peacock</p>
+    <p><input type="radio" name="question2" value="ostrich">B Ostrich</p>
+    <p> <input type="radio" name="question2" value="parrot">C  Parrot</p>
+    <p><input type="radio" name="question2" value="pigeon">D Pigeon</p>
+    </div>
+    <div>
+    <p>C)which of the following is a multiple of 9?</p>
+    <p><input type="radio" name="question3" value="80">A 80</p>
+    <p><input type="radio" name="question3" value="81" id="eightyone">B 81</p>
+    <p><input type="radio" name="question3" value="76">C  76</p>
+    <p><input type="radio" name="question3" value="92">D  92</p>
+    </div>
+    <div>
+    <p>D)father of computer science?</p>
+    <p><input type="radio" name="question4" value="albert einstein">A Albert Einstein</p>
+    <p><input type="radio" name="question4" value="Issac Newton" >B  Issac Newton</p>
+    <p><input type="radio" name="question4" value="charles babbage" id="father">C  Charles Babbage</p>
+    <p><input type="radio" name="question4" value="Thomas edison">D Thomas Edison</p>
+    </div>
+    <button type="button" value="submit" id="btn" >submit</button>
+    </form>
+    <script>
+        btn.onclick=function() 
+        {
+            var score=0;
+           if(document.getElementById("four").checked)
+           {
+           score++;
+           }
+           if(document.getElementById("bird").checked)
+           {
+               score++;
+           }
+           if(document.getElementById("eightyone").checked)
+           {
+           score++;
+           }
+           if(document.getElementById("father").checked)
+           {
+               score++;
+           }
+           alert("Final score="+score);
+        }
+    </script>
+    </body>
+    </html>

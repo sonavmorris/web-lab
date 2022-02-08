@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change()
+        {
+            var i=`<img src='dctr.jpg' height="500" width="500">`;
+            var h=`<h5>how to change the content</h5>`;
+            image.innerHTML=i+h;
+        }
+        function changeback()
+        {
+           var i=`<img src='hn.jpg' width="500" height="500">`;
+           var h=`<h5>how to change the content</h5>`;
+           image.innerHTML=i+h;
+        }
+        </script>
+</head>
+<body>
+    <div   onmouseover="change()" onmouseout="changeback()" id="image">
+    <img src="C:\xampp\htdocs\online organ donation\images\hn.jpg" height="500" width="500">
+    <h4> how to change the content</h4>
+    </div>
+    
+</body>
+</html>
